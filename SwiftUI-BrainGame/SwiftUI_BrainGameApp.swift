@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUI_BrainGameApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }

@@ -11,6 +11,8 @@
 		B6EA95312BD1BF3100CABF12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EA95302BD1BF3100CABF12 /* ContentView.swift */; };
 		B6EA95332BD1BF3300CABF12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6EA95322BD1BF3300CABF12 /* Assets.xcassets */; };
 		B6EA95362BD1BF3300CABF12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6EA95352BD1BF3300CABF12 /* Preview Assets.xcassets */; };
+		B6EA953D2BD1C44400CABF12 /* ColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EA953C2BD1C44400CABF12 /* ColorController.swift */; };
+		B6EA953F2BD8564B00CABF12 /* ButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EA953E2BD8564B00CABF12 /* ButtonAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		B6EA95302BD1BF3100CABF12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B6EA95322BD1BF3300CABF12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6EA95352BD1BF3300CABF12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B6EA953C2BD1C44400CABF12 /* ColorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorController.swift; sourceTree = "<group>"; };
+		B6EA953E2BD8564B00CABF12 /* ButtonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				B6EA952E2BD1BF3100CABF12 /* SwiftUI_BrainGameApp.swift */,
 				B6EA95302BD1BF3100CABF12 /* ContentView.swift */,
+				B6EA953E2BD8564B00CABF12 /* ButtonAnimation.swift */,
+				B6EA953C2BD1C44400CABF12 /* ColorController.swift */,
 				B6EA95322BD1BF3300CABF12 /* Assets.xcassets */,
 				B6EA95342BD1BF3300CABF12 /* Preview Content */,
 			);
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6EA953F2BD8564B00CABF12 /* ButtonAnimation.swift in Sources */,
 				B6EA95312BD1BF3100CABF12 /* ContentView.swift in Sources */,
 				B6EA952F2BD1BF3100CABF12 /* SwiftUI_BrainGameApp.swift in Sources */,
+				B6EA953D2BD1C44400CABF12 /* ColorController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
