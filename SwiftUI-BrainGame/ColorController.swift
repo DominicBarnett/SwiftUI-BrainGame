@@ -40,9 +40,7 @@ enum GameColors: String, CaseIterable{
     }
 }
 
-class ColorController: ObservableObject{
-    // red, blue, yellow, orange, green, purple
-
+class ColorController: ObservableObject {
     @Published var score: Int = 0
     @Published var time: Int = 60
     @Published var timer: Timer = Timer()
@@ -51,22 +49,31 @@ class ColorController: ObservableObject{
     @Published var colorBtext: GameColors = .blue
     @Published var colorBcolor: GameColors = .red
     
-    
-    init(){
+    init() {
         changeColors()
     }
     
-    func startGame(){
+    func startGame() {
         gameState = .playing
         time = 60
-        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { timer in
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
             self.time -= 1
-            print(self.time)
-            if self.time < 0{
-                self.timer.invalidate()
+            if self.time <= 0 {
+                timer.invalidate()
                 self.gameState = .over
             }
-        })
+        }
+    }
+    
+    func restartGame() {
+        // Reset time and score
+        time = 60
+        score = 0
+        // Restart the timer
+        timer.invalidate()
+        startGame()
+        // Reset game state to playing
+        gameState = .playing
     }
     
     func changeColors(){
